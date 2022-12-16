@@ -7,10 +7,10 @@ const fillBoard = (queens) => {
         board.push([]);
         for(let index2 = 0; index2 < queens.size; index2++){
             if(index2 !== array[index]){
-                board[index].push(0);
+                board[index].push("_");
                 continue;
             }
-            board[index].push(1);
+            board[index].push('Q');
         }
     }
     for(let index = 0; index < queens.size; index++){
@@ -101,21 +101,16 @@ function Solution({size}) {
         queens
     }
 
-    let [status, returnedQueens] = PlacingQueens(state, column, size)
+    let [, returnedQueens] = PlacingQueens(state, column, size)
     let array = fillBoard(returnedQueens)
 
     return(
         <>
-            <p>{returnedQueens}</p>
             {array.map((row, index) => {
-                    if(index % 2 === 0) {
-                        return <Row numbers={row} key={index} color="set1"/>
-                    }
-                    if(index % 2 !== 0){
-                        return <Row numbers={row} key={index} color="set2"/>
-                    }
-                }
-            )}
+                row.unshift((index+1).toString().padStart(2, 0));
+                row.push((index+1).toString().padStart(2, 0));
+                return <Row numbers={row} key={index} rowNumber={index} size={size}/>
+            })}
         </>
     )
 }
