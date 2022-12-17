@@ -25,8 +25,8 @@ function Tile({number, color=false, rowNumber, index, size}) {
             fgColor = "dark"
     }
     return (
-        <div className={`tile col tile bg-${bgColor} border p-0`}>
-            <p className={`text-${fgColor} bold text-center m-2`}>{number}</p>
+        <div className={`tile col tile bg-${bgColor} border p-0 d-flex align-items-center justify-content-center text-center`} style={{maxWidth: "3rem", height: "3rem", width: "3rem"}}>
+            <p className={`text-${fgColor} bold m-0`} >{number}</p>
         </div>
     )
 }

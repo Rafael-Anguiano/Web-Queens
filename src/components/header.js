@@ -25,7 +25,7 @@ const Header = ({setBoardsize, currentValue}) => {
                         placeholder="Number" 
                         type="number" 
                         min={1}
-                        max={30}
+                        max={45}
                         onChange={setValue} 
                         ></input>
                     <button type="submit" className="btn btn-success">Calculate</button>
