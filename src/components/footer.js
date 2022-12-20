@@ -9,7 +9,7 @@ const Footer = () => {
                 <span className='text-dark text-center fw-bold items-center d-block'>
                     <p className='m-0'>Rafael de Jesús Anguiano Suárez del Real</p>
                     <a href='https://rafael-anguiano-portfolio.web.app/' title="Portfolio" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsPersonFill className='m-2'/></a>
-                    <a href='./Resume-Rafael_Anguiano.pdf' title="Resume" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsFileEarmarkPersonFill className='m-2'/></a>
+                    <a href='../Resume-Rafael-Anguiano.pdf' title="Resume" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsFileEarmarkPersonFill className='m-2'/></a>
                     <a href='https://www.linkedin.com/in/rafael-anguiano/' title="LinkedIn Profile" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsLinkedin className='m-2'/></a>
                     <a href='https://github.com/Rafael-Anguiano' title="GitHub Profile" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsGithub className='m-2'/></a>
                     <a href='mailto:rj.anguiano.23@gmail.com' title="Email Rafael" target='_blank' rel='noreferrer' className='text-dark text-decoration-none'><BsFillEnvelopeFill className='m-2'/></a>
