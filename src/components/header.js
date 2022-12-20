@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { FaChessQueen } from "react-icons/fa"
 
 
 const Header = ({setBoardsize, currentValue}) => {
@@ -12,17 +13,17 @@ const Header = ({setBoardsize, currentValue}) => {
         setBoardsize(value.target.value)
     }
     return(
-        <nav class="navbar navbar-dark bg-dark">
-            <div class="container-fluid">
-                <h1 class="navbar-brand">
-                N-Queens
+        <nav className="navbar navbar-dark bg-dark">
+            <div className="container-fluid">
+                <h1 className="navbar-brand m-0">
+                    <span><FaChessQueen className="me-2"/>N-Queens Problem</span>
                 </h1>
                 <form className="d-flex" onSubmit={handleSubmit}>
                     <input 
                         id="myValue" 
                         aria-label="Number"
-                        className="form-control me-2" 
-                        placeholder="Number" 
+                        className="form-control me-2"
+                        placeholder={`Size: ${currentValue}`} 
                         type="number" 
                         min={1}
                         max={45}

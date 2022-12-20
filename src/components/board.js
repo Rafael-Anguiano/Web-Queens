@@ -9,7 +9,7 @@ function Board({size}) {
     alphabet.unshift("//");
     alphabet.push("//");
     return (
-        <div className="board">
+        <div className="board mt-3 mb-5">
             <Row numbers={alphabet} rowNumber={0} isAlphabet={true}/>
             <Solution size={size}/>
             <Row numbers={alphabet} rowNumber={0} isAlphabet={true}/>
